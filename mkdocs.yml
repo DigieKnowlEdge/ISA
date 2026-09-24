@@ -1,0 +1,66 @@
+site_name: ISA Blended Training 2026
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  custom_dir: overrides
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+
+markdown_extensions:
+  - tables
+  - fenced_code
+  - attr_list
+  - admonition
+
+nav:
+  - Home: index.md
+  - Prework:
+      - Overview: prework/index.md
+      - C4 Modeling Intro: prework/c4-modeling-intro.md
+  - Lessons:
+      - "LS1-1: Onboarding": lessons/lesson1-1.md
+      - "LS1-2: Overview": lessons/lesson1-2.md
+      - "LS2-4: Threat Modeling AI Solutions": lessons/lesson2-4.md
+      - "LS2-5: GenAI Security Controls": lessons/lesson2-5.md
+  - Exercises:
+      - Overview: exercises/index.md
+      - Case Studies:
+          - "CS-1: Car Update Service Sprint 1": exercises/cs-01-car-update-service-sprint1.md
+          - "CS-2: Car Update Service Sprint 2": exercises/cs-02-car-update-service-sprint2.md
+      - Module 2:
+          - "EX2-1: Identify Interactors": exercises/ex2-01-identify-interactors.md
+          - "EX2-2: First Workshop": exercises/ex2-02-first-workshop.md
+          - "EX2-3: Follow-up Workshops": exercises/ex2-03-follow-up-workshops.md
+          - "EX2-4: Identify Trust Boundaries": exercises/ex2-04-identify-trust-boundaries.md
+          - "EX2-5: DFD Validation & Path Authentication": exercises/ex2-05-dfd-validation-path-authentication.md
+          - "EX2-6: Comparing Security Principles": exercises/ex2-06-comparing-security-principles.md
+          - "EX2-7: Security Principles in CUS": exercises/ex2-07-security-principles-in-cus.md
+          - "EX2-8: Elevation of Privilege Game": exercises/ex2-08-elevation-of-privilege-game.md
+          - "EX2-9: ASRG, CAV & Metrics": exercises/ex2-09-asrg-cav-metrics.md
+          - "EX2-10: Apply Countermeasures": exercises/ex2-10-apply-countermeasures.md
+          - "EX2-11: Finalize Security Profile": exercises/ex2-11-finalize-security-profile.md
+      - Module 3:
+          - "EX3-1: Create Cloud Threats": exercises/ex3-01-create-cloud-threats.md
+          - "EX3-2: Individual Security Profile": exercises/ex3-02-individual-security-profile.md
+      - Module 4:
+          - "EX4-1: Solve an ISA Dilemma": exercises/ex4-01-solve-isa-dilemma.md
+      - Exam:
+          - "Exam: Overview": exercises/exam.md

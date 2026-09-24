@@ -1,0 +1,14 @@
+slides:
+  theme: black
+  highlight_theme: monokai
+
+revealjs:
+  history: true
+  slideNumber: "c/t"
+  controls: true
+  progress: true
+  transition: slide
+
+plugins:
+  - extra_css:
+      - assets/slides-compact.css

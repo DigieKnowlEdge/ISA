@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% if page.file.src_path.startswith('lessons/') %}
+<div style="text-align: right; margin-bottom: 1rem;">
+  <a href="/slides/{{ page.file.src_path | replace('.md', '.html') }}"
+     class="md-button md-button--primary"
+     target="_blank"
+     rel="noopener">
+    &#9654; View as Presentation
+  </a>
+</div>
+{% endif %}
+{{ super() }}
+{% endblock %}
